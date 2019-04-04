@@ -68,8 +68,8 @@ From
   tblADComputers On tblAssets.AssetID = tblADComputers.AssetID left outer Join
   tblOperatingsystem on tblAssets.AssetID = tblOperatingsystem.AssetID
 Where
-  tblAssetCustom.State = 1 And
   tblComputersystem.PartOfDomain = 1 And
+  tblAssetCustom.State = 1 And
   tblAssets.lastchanged > '"+$changes_from+ "'  And
   tblAssets.scanserver = '" + $scanserver + "'"
 
